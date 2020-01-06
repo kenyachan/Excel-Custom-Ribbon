@@ -2,8 +2,9 @@
 
 Create a folder on your desktop called "customUI". This is case sensitive and your ribbon will not show up if it's wrong.
 
-``` XML
 Inside the customUI folder, create an XML file called "customUI14.xml" and paste in the following:
+
+``` XML
 <customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui">
     <ribbon startFromScratch="false">
         <tabs>
