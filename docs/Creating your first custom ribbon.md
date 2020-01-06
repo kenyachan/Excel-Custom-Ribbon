@@ -6,7 +6,7 @@ Inside the customUI folder, create an XML file called "customUI14.xml". To do th
 
 Rename the text document (including the .txt extension) to "customUI14.xml". When prompted "If you change the file name extension, the file might become unusable. Are you sure you want to change it?", click Yes.
 
-![Imgur](https://imgur.com/LJdWwNP.jpg)
+![Change file extension warning for customUI14.xml](https://imgur.com/LJdWwNP.jpg)
 
 Open customUI14.xml in Notepad and paste in the following:
 
@@ -41,7 +41,7 @@ Create another folder on your desktop called "_rels".
 
 Inside the _rels folder, create an XML file called ".rels". To do this, right click > New > Text Document. Rename the text document to ".rels". When prompted "If you change the file name extension, the file might become unusable. Are you sure you want to change it?", click Yes.
 
-![Imgur](https://imgur.com/FFeRBpy.jpg)
+![Change file extension warning for .rels](https://imgur.com/FFeRBpy.jpg)
 
 Open .rels with Notepad and paste in the following:
 
@@ -59,16 +59,16 @@ Open .rels with Notepad and paste in the following:
 If there is a .xml file extension, rename the .rels.xml file to remove the file extension
 i.e. .rels.xml -> .rels
 
-![Imgur](https://imgur.com/wVxTeMd.jpg)
+![.rels](https://imgur.com/wVxTeMd.jpg)
 
 You should now have 2 folders on your desktop.
 
 Create a new Excel workbook and save it to your desktop.
 Open the workbook with [7-zip](https://www.7-zip.org/download.html) and drag in the two folders you just created.
 
-![Imgur](https://imgur.com/5cgCGWz.jpg)
+![Opening Excel workbook with 7-zip](https://imgur.com/5cgCGWz.jpg)
 
 Congratulations, you've now created your first custom ribbon!
 Open the workbook and your custom ribbon should show up the top.
 
-![Imgur](https://imgur.com/qv1TtPx.jpg)
+![Custom Tab and Ribbon](https://imgur.com/qv1TtPx.jpg)
