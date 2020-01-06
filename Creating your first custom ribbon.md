@@ -2,7 +2,13 @@
 
 Create a folder on your desktop called "customUI". This is case sensitive and your ribbon will not show up if it's wrong.
 
-Inside the customUI folder, create an XML file called "customUI14.xml" and paste in the following:
+Inside the customUI folder, create an XML file called "customUI14.xml". To do this, you right click > New > Text Document.
+
+Rename the text document (including the .txt extension) to "customUI14.xml". When prompted "If you change the file name extension, the file might become unusable. Are you sure you want to change it?", click Yes.
+
+![Imgur](https://imgur.com/LJdWwNP.jpg)
+
+Open customUI14.xml in Notepad and paste in the following:
 
 ``` XML
 <customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui">
@@ -26,9 +32,15 @@ Inside the customUI folder, create an XML file called "customUI14.xml" and paste
 </customUI>
 ```
 
+Save and close.
+
 Create another folder on your desktop called "_rels".
 
-Inside the _rels folder, create an XML file called ".rels" and paste in the following:
+Inside the _rels folder, create an XML file called ".rels". To do this, right click > New > Text Document. Rename the text document to ".rels". When prompted "If you change the file name extension, the file might become unusable. Are you sure you want to change it?", click Yes.
+
+![Imgur](https://imgur.com/FFeRBpy.jpg)
+
+Open .rels with Notepad and paste in the following:
 
 ``` XML
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -41,13 +53,19 @@ Inside the _rels folder, create an XML file called ".rels" and paste in the foll
 </Relationships>
 ```
 
-Rename the .rels.xml file to remove the file extension
+If there is a .xml file extension, rename the .rels.xml file to remove the file extension
 i.e. .rels.xml -> .rels
+
+![Imgur](https://imgur.com/wVxTeMd.jpg)
 
 You should now have 2 folders on your desktop.
 
 Create a new Excel workbook and save it to your desktop.
 Open the workbook with 7-zip and drag in the two folders you just created.
 
+![Imgur](https://imgur.com/5cgCGWz.jpg)
+
 Congratulations, you've now created your first custom ribbon!
 Open the workbook and your custom ribbon should show up the top.
+
+![Imgur](https://imgur.com/qv1TtPx.jpg)
