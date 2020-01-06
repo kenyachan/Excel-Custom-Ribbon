@@ -19,6 +19,9 @@ Open customUI14.xml in Notepad and paste in the following:
                 <group id="Group_1" label="Group 1">
                     <button id="Button_1_btn" label="Button 1" size="large" onAction="public.Sub.reference" imageMso="ShowFrom" />
                     <button id="Button_2_btn" label="Button 2" size="large" onAction="public.Sub.reference2" imageMso="CreateMailRule" />
+
+                    <separator id="separator1" />
+
                     <button id="Button_3_btn" label="Button 3" size="large" onAction="public.Sub.reference3" screentip="This is a screen tip" supertip="This is a super tip" imageMso="ShowBcc" />
                 </group>
 
