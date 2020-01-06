@@ -61,7 +61,7 @@ i.e. .rels.xml -> .rels
 You should now have 2 folders on your desktop.
 
 Create a new Excel workbook and save it to your desktop.
-Open the workbook with 7-zip and drag in the two folders you just created.
+Open the workbook with [7-zip](https://www.7-zip.org/download.html) and drag in the two folders you just created.
 
 ![Imgur](https://imgur.com/5cgCGWz.jpg)
 
