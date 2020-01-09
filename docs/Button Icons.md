@@ -8,7 +8,7 @@ MSO icons are the Microsoft Office icons. They are quick simple and easier to us
  A full list of them can be found [here](https://www.microsoft.com/en-au/download/details.aspx?id=21103).
 
 ``` XML
-<button imageMSO="iconName" />
+<button id="Button_1_btn" label="Button 1" size="large" onAction="public.Sub.reference" imageMso="ShowFrom" />
 ```
 
 ## Creating your first button with a custom icon
@@ -51,5 +51,5 @@ Create a file called *customUI14.xml.rels* and paste in the following:
 In the customUI14.xml, add replace `imageMSO` with image and set the value to the *Id* of the image as defined in *customUI14.xml.rels*.
 
 ``` XML
-<button image="WordImg" />
+<button id="Button_1_btn" label="Button 1" size="large" onAction="public.Sub.reference" image="WordImg" />
 ```
