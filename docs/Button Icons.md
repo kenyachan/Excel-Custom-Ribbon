@@ -17,9 +17,9 @@ MSO icons are the Microsoft Office icons. They are quick simple and easier to us
 
 Create a folder on your desktop called *images*.
 
-Download this [Microsoft Word icon](https://i.imgur.com/31R3NvL.png) and place it in the *images* folder. 
+Download this [Microsoft Word icon](https://i.imgur.com/31R3NvL.png) and place it in the *images* folder.
 
-Rename the icon to *Word.jpg*.
+Rename the icon to *Word.png*.
 
 Open the Workbook with 7-zip and extract *[Content_Types].xml*
 
