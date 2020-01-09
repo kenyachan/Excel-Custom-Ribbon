@@ -17,7 +17,7 @@ Open customUI14.xml in Notepad and paste in the following:
             <tab id="MyCustomTabName" label="Custom Tab">
 
                 <group id="Group_1" label="Group 1">
-                    <button id="Button_1_btn" label="Button 1" size="large" onAction="public.Sub.reference" imageMso="ShowFrom" />
+                    <button id="Button_1_btn" label="Button 1" size="large" onAction="public.Sub.reference" image="WordImg" />
                     <button id="Button_2_btn" label="Button 2" size="large" onAction="public.Sub.reference2" imageMso="CreateMailRule" />
 
                     <separator id="separator1" />
