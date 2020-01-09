@@ -13,7 +13,7 @@ End Sub
 In the *CustomUI14.xml*, change the first button's `onAction` value to `RibbonButtons.DoSomething`.
 
 ``` XML
-<button id="Button_1_btn" label="Button 1" size="large" onAction="RibbonButtons.DoSomething" imageMso="ShowFrom" />
+<button id="Button_1_btn" label="Button 1" size="large" onAction="RibbonButtons.DoSomething" image="WordImg" />
 ```
 
 Now when you click on *Button 1*, a message box should pop up.
