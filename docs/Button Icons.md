@@ -2,9 +2,9 @@
 
 Button icons are defined within the `<button />` tag in *customUI14.xml*.
 
-> MSO icons are the Microsoft Office icons. They are quick simple and easier to use than custom icons and will help you keep a consistent look through your ribbon.
+> *MSO icons are the Microsoft Office icons. They are quick simple and easier to use than custom icons and will help you keep a consistent look through your ribbon.*
 >
-> A full list of them can be found [here](https://www.microsoft.com/en-au/download/details.aspx?id=21103).
+> *A full list of them can be found [here](https://www.microsoft.com/en-au/download/details.aspx?id=21103).*
 >
 > ``` XML
 > <button id="Button_1_btn" label="Button 1" size="large" onAction="public.Sub.reference" imageMso="ShowFrom" />
