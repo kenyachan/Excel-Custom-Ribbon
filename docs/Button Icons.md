@@ -14,7 +14,7 @@ Button icons are defined within the `<button />` tag in *customUI14.xml*.
 
 > *Custom icons can be used if you cannot find a suitable icon from the MSO gallery.*
 
-Create a folder on your desktop called *images*.
+Create a folder with the *customUI* folder called *images*.
 
 Download this [Microsoft Word icon](https://i.imgur.com/31R3NvL.png) and place it in the *images* folder.
 
@@ -43,12 +43,18 @@ Create a file called *customUI14.xml.rels* and paste in the following:
 </Relationships>
 ```
 
-**Id** is the what you will refer to in the `<Button />` tag.
-
-**Target** is the *relative* path to the image file.
+> **Id** is the what you will refer to in the `<Button />` tag.
+>
+> **Target** is the *relative* path to the image file.
 
 In the customUI14.xml, add replace `imageMso` with image and set the value to the *Id* of the image as defined in *customUI14.xml.rels*.
 
 ``` XML
 <button id="Button_1_btn" label="Button 1" size="large" onAction="public.Sub.reference" image="WordImg" />
 ```
+
+Add all files back to the Excel archive.
+
+Opening the Excel file will now show the custom ribbon with the custom button icon.
+
+![Custom Ribbon with custom button icon](https://i.imgur.com/Rxdyzje.png)
