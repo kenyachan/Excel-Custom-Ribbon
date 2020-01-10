@@ -47,7 +47,7 @@ Create a file called *customUI14.xml.rels* and paste in the following:
 
 **Target** is the *relative* path to the image file.
 
-In the customUI14.xml, add replace `imageMSO` with image and set the value to the *Id* of the image as defined in *customUI14.xml.rels*.
+In the customUI14.xml, add replace `imageMso` with image and set the value to the *Id* of the image as defined in *customUI14.xml.rels*.
 
 ``` XML
 <button id="Button_1_btn" label="Button 1" size="large" onAction="public.Sub.reference" image="WordImg" />
