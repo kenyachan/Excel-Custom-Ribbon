@@ -43,8 +43,7 @@ Create a file called *customUI14.xml.rels* and paste in the following:
 </Relationships>
 ```
 
-> **Id** is the what you will refer to in the `<Button />` tag.
->
+> **Id** is the what you will refer to in the `<Button />` tag.  
 > **Target** is the *relative* path to the image file.
 
 In the customUI14.xml, add replace `imageMso` with image and set the value to the *Id* of the image as defined in *customUI14.xml.rels*.
