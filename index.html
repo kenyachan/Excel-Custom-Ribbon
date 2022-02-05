@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Custom Ribbon</title>
+</head>
+<body>
+    <head>
+        <h1>Excel Custom Ribbon</h1>
+        <p id="subHeading">A guide to creating a custom ribbon in Excel</p>
+    </head>
+    <main>
+        <article>
+            <h2>Creating Your First Custom Ribbon</h2>
+            <!-- Create customUI -->
+            <p>Create a folder on your desktop called "customUI". Note that this is case sensitive and your ribbon will not show up if it's wrong.</p>
+            <p>Inside the custom UI folder, create an XML file called "customUI14.xml".</p>
+            <p>Do this by right clicking anywhere within the folder to bring up the context menu. Then click on New, then Text Document. Rename the text document (including the .txt extension) to "customUI14.xml". When you are prompted with "If you change the file name extension, the file might become unusable. Are you sure you want to change it?", click Yes.</p>
+            <img src="https://imgur.com/LJdWwNP.jpg" alt="Change file extension warning.">
+            <p>Open the customUI14.xml in Notepad and paste the following:</p>
+            <pre><code>
+                &lt;customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui">
+                    &lt;ribbon startFromScratch="false">
+                        &lt;tabs>
+                            &lt;tab id="MyCustomTabName" label="Custom Tab">
+                
+                                &lt;group id="Group_1" label="Group 1">
+                                    &lt;button id="Button_1_btn" label="Button 1" size="large" onAction="public.Sub.reference" imageMso="ShowFrom" />
+                                    &lt;button id="Button_2_btn" label="Button 2" size="large" onAction="public.Sub.reference2" imageMso="CreateMailRule" />
+                
+                                    &lt;separator id="separator1" />
+                
+                                    &lt;button id="Button_3_btn" label="Button 3" size="large" onAction="public.Sub.reference3" screentip="This is a screen tip" supertip="This is a super tip" imageMso="ShowBcc" />
+                                &lt;/group>
+                
+                                &lt;group id="Group_2" label="Group 2">
+                                    &lt;button id="Button_4_btn" label="Button 4" size="normal" onAction="public.Sub.reference4" imageMso="EnvelopesAndLabelsDialog" />
+                                &lt;/group>
+                
+                            &lt;/tab>
+                        &lt;/tabs>
+                    &lt;/ribbon>
+                &lt;/customUI>
+            </code></pre>
+            <p>Save and close.</p>
+            <!-- Create _rels -->
+            <p>Create another folder on your desktop called "_rels".</p>
+            <p>In the _rels folder, create an XML file called ".rels".</p>
+            <p>Do this by right clicking anywhere within the folder to bring up the context menu. Then click on New, then Text Document. Rename the text document (including the .txt extension) to ".rels" When you are prompted with "If you change the file name extension, the file might become unusable. Are you sure you want to chagne it?", click Yes.</p>
+            <p>Note that .rels is an xml file but you do not put the .xml extension on the file.</p>
+            <pre><code>
+                &lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+                &lt;Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+                    &lt;Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/>
+                    &lt;Relationship Id="rId6" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties" Target="docProps/app.xml"/>
+                    &lt;Relationship Id="rId5" Type="http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties" Target="docProps/core.xml"/>
+                    &lt;!-- Added this relationship for custom ribbon UI -->
+                    &lt;Relationship Id="rId4" Type="http://schemas.microsoft.com/office/2007/relationships/ui/extensibility" Target="customUI/customUI14.xml"/>
+                &lt;/Relationships>
+            </code></pre>
+            <p>If there is an .xml extention, rename the .rels.xml file back to .rels.</p>
+            <!-- Add ribbon files to an Excel workbook -->
+            <p>You should now have 2 folders on yoru desktop, customUI14, and _rels.</p>
+            <p>Create a new Excel workbook and sve it to your desktop. Open the workbook with 7-zip and drag in the two folders you've just created.</p>
+            <p>Congratulations! you've now created your first custom ribbon! Open the workbook and your custom ribbon should show up the top.</p>
+        </article>
+        <article>
+            <h2>Adding Button Icons</h2>
+        </article>
+        <article>
+            <h2>Adding Button Fuctions</h2>
+        </article>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
